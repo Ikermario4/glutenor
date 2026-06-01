@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SENSE Gluten Free | Glutenor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial;margin:0;background:#f5f7fb;}
+header{background:#0f172a;color:white;padding:30px;text-align:center;}
+.container{max-width:800px;margin:auto;padding:20px;}
+.card{background:white;padding:20px;border-radius:12px;}
+a{color:#2563eb;text-decoration:none;}
+</style>
+</head>
+<body>
+<header><h1>SENSE Gluten Free</h1></header>
+<div class="container"><div class="card">
+
+<h2>🍽️ Información</h2>
+<p>Panadería y cafetería sin gluten.</p>
+<p>✔ 100% sin gluten</p>
+
+<h2>📍 Ubicación</h2>
+<p>Tarragona</p>
+
+<h2>⭐ Recomendado para</h2>
+<ul>
+<li>Panadería</li>
+<li>Desayunos</li>
+</ul>
+
+<a href="../index.html">← Volver</a>
+
+</div></div>
+</body>
+</html>

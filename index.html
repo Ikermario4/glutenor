@@ -37,13 +37,9 @@
       padding: 20px;
     }
 
-    h2 {
-      margin-top: 30px;
-    }
-
     .card {
       background: white;
-      padding: 15px;
+      padding: 20px;
       margin: 12px 0;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
@@ -51,29 +47,30 @@
     }
 
     .card:hover {
-      transform: scale(1.01);
+      transform: translateY(-2px);
     }
 
     .title {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 15px;
     }
 
     .tag {
       font-size: 12px;
-      padding: 4px 10px;
+      padding: 5px 10px;
       border-radius: 6px;
       color: white;
       background: #22c55e;
       white-space: nowrap;
     }
 
-    .tag.orange {
+    .orange {
       background: #f59e0b;
     }
 
-    .tag.red {
+    .red {
       background: #ef4444;
     }
 
@@ -85,7 +82,15 @@
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: #0f172a;
+    }
+
+    a:hover {
+      color: #2563eb;
+    }
+
+    .intro {
+      line-height: 1.7;
     }
   </style>
 </head>
@@ -99,11 +104,25 @@
 
 <div class="container">
 
+  <div class="card intro">
+    <h2>Bienvenido a Glutenor</h2>
+
+    <p>
+      Glutenor es una guía dedicada a encontrar restaurantes, cafeterías
+      y establecimientos con opciones sin gluten en Tarragona.
+    </p>
+
+    <p>
+      Nuestro objetivo es ayudar a personas celíacas o con sensibilidad al gluten
+      a descubrir lugares donde comer con mayor tranquilidad.
+    </p>
+  </div>
+
   <h2>🍽️ Restaurantes en Tarragona</h2>
 
   <div class="card">
     <div class="title">
-      <h3>El Terrat</h3>
+      <h3><a href="restaurantes/el-terrat.html">El Terrat</a></h3>
       <span class="tag orange">Opciones sin gluten</span>
     </div>
     <p class="desc">Cocina mediterránea de autor en el centro de Tarragona.</p>
@@ -111,7 +130,7 @@
 
   <div class="card">
     <div class="title">
-      <h3>Frida Restaurant</h3>
+      <h3><a href="restaurantes/frida.html">Frida Restaurant</a></h3>
       <span class="tag orange">Opciones sin gluten</span>
     </div>
     <p class="desc">Restaurante mexicano con platos adaptables sin gluten.</p>
@@ -119,7 +138,7 @@
 
   <div class="card">
     <div class="title">
-      <h3>El Llagut</h3>
+      <h3><a href="restaurantes/el-llagut.html">El Llagut</a></h3>
       <span class="tag orange">Opciones sin gluten</span>
     </div>
     <p class="desc">Arroces y pescado en el puerto de Tarragona.</p>
@@ -127,56 +146,51 @@
 
   <div class="card">
     <div class="title">
-      <h3>El Pòsit del Serrallo</h3>
+      <h3><a href="restaurantes/el-posit-del-serrallo.html">El Pòsit del Serrallo</a></h3>
       <span class="tag orange">Opciones sin gluten</span>
     </div>
-    <p class="desc">Restaurante muy conocido en el puerto con carta adaptable.</p>
+    <p class="desc">Restaurante marinero situado en el Serrallo.</p>
   </div>
 
   <div class="card">
     <div class="title">
-      <h3>Espai La Vall</h3>
-      <span class="tag green">100% sin gluten</span>
+      <h3><a href="restaurantes/espai-la-vall.html">Espai La Vall</a></h3>
+      <span class="tag">100% sin gluten</span>
     </div>
     <p class="desc">Cafetería especializada sin gluten en Tarragona.</p>
   </div>
 
   <div class="card">
     <div class="title">
-      <h3>Sense Gluten Free</h3>
-      <span class="tag green">100% sin gluten</span>
+      <h3><a href="restaurantes/sense-gluten-free.html">Sense Gluten Free</a></h3>
+      <span class="tag">100% sin gluten</span>
     </div>
-    <p class="desc">Panadería y cafetería 100% sin gluten.</p>
+    <p class="desc">Panadería y cafetería especializada.</p>
   </div>
 
   <div class="card">
     <div class="title">
-      <h3>Ran de Mar</h3>
-      <span class="tag green">100% sin gluten</span>
+      <h3><a href="restaurantes/ran-de-mar.html">Ran de Mar</a></h3>
+      <span class="tag">100% sin gluten</span>
     </div>
-    <p class="desc">Restaurante marinero especializado en cocina sin gluten.</p>
+    <p class="desc">Restaurante marinero con opciones para celíacos.</p>
   </div>
 
   <div class="card">
     <div class="title">
-      <h3>El Pòsit (Cambrils)</h3>
-      <span class="tag orange">Opciones sin gluten</span>
-    </div>
-    <p class="desc">Restaurante de referencia en la provincia de Tarragona.</p>
-  </div>
-
-  <div class="card">
-    <div class="title">
-      <h3>AQ Restaurant</h3>
+      <h3><a href="restaurantes/aq-restaurant.html">AQ Restaurant</a></h3>
       <span class="tag red">Alta gastronomía</span>
     </div>
-    <p class="desc">Restaurante de nivel Michelin con menús adaptables sin gluten.</p>
+    <p class="desc">Restaurante gastronómico con menús adaptables.</p>
   </div>
 
-</div>
-
-</body>
-</html>
+  <div class="card">
+    <div class="title">
+      <h3><a href="restaurantes/el-alquimista.html">El Alquimista</a></h3>
+      <span class="tag">100% sin gluten</span>
+    </div>
+    <p class="desc">Cafetería y repostería especializada sin gluten.</p>
+  </div>
 
 </div>
 

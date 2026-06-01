@@ -16,13 +16,14 @@
     header {
       background: #0f172a;
       color: white;
-      padding: 40px 20px;
+      padding: 45px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
+      letter-spacing: 1px;
     }
 
     header p {
@@ -31,26 +32,60 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
       padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
     }
 
     .card {
       background: white;
       padding: 15px;
-      margin: 15px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 12px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .tag {
-      display: inline-block;
-      background: #22c55e;
-      color: white;
-      padding: 4px 8px;
-      border-radius: 5px;
       font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: white;
+      background: #22c55e;
+      white-space: nowrap;
+    }
+
+    .tag.orange {
+      background: #f59e0b;
+    }
+
+    .tag.red {
+      background: #ef4444;
+    }
+
+    .desc {
+      margin-top: 8px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
@@ -64,19 +99,84 @@
 
 <div class="container">
 
-  <h2>🍽️ Restaurantes recomendados</h2>
+  <h2>🍽️ Restaurantes en Tarragona</h2>
 
   <div class="card">
-    <h3>Ejemplo Restaurante 1</h3>
-    <span class="tag">Sin gluten</span>
-    <p>Tarragona · Opciones seguras para celíacos.</p>
+    <div class="title">
+      <h3>El Terrat</h3>
+      <span class="tag orange">Opciones sin gluten</span>
+    </div>
+    <p class="desc">Cocina mediterránea de autor en el centro de Tarragona.</p>
   </div>
 
   <div class="card">
-    <h3>Ejemplo Restaurante 2</h3>
-    <span class="tag">Opciones sin gluten</span>
-    <p>Tarragona · Cocina adaptada con cuidado.</p>
+    <div class="title">
+      <h3>Frida Restaurant</h3>
+      <span class="tag orange">Opciones sin gluten</span>
+    </div>
+    <p class="desc">Restaurante mexicano con platos adaptables sin gluten.</p>
   </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>El Llagut</h3>
+      <span class="tag orange">Opciones sin gluten</span>
+    </div>
+    <p class="desc">Arroces y pescado en el puerto de Tarragona.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>El Pòsit del Serrallo</h3>
+      <span class="tag orange">Opciones sin gluten</span>
+    </div>
+    <p class="desc">Restaurante muy conocido en el puerto con carta adaptable.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>Espai La Vall</h3>
+      <span class="tag green">100% sin gluten</span>
+    </div>
+    <p class="desc">Cafetería especializada sin gluten en Tarragona.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>Sense Gluten Free</h3>
+      <span class="tag green">100% sin gluten</span>
+    </div>
+    <p class="desc">Panadería y cafetería 100% sin gluten.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>Ran de Mar</h3>
+      <span class="tag green">100% sin gluten</span>
+    </div>
+    <p class="desc">Restaurante marinero especializado en cocina sin gluten.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>El Pòsit (Cambrils)</h3>
+      <span class="tag orange">Opciones sin gluten</span>
+    </div>
+    <p class="desc">Restaurante de referencia en la provincia de Tarragona.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">
+      <h3>AQ Restaurant</h3>
+      <span class="tag red">Alta gastronomía</span>
+    </div>
+    <p class="desc">Restaurante de nivel Michelin con menús adaptables sin gluten.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
 
 </div>
 

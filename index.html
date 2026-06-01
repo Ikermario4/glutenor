@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Glutenor | Restaurantes sin gluten en Tarragona</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Glutenor | Restaurantes sin gluten en Tarragona</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f7fb;
-      color: #111;
-    }
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  background:#f5f7fb;
+}
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 45px 20px;
-      text-align: center;
-    }
+header{
+  background:#0f172a;
+  color:white;
+  padding:50px 20px;
+  text-align:center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-      letter-spacing: 1px;
-    }
+header h1{
+  margin:0;
+  font-size:45px;
+}
 
-    header p {
-      margin-top: 10px;
-      opacity: 0.8;
-    }
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
 
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 20px;
-    }
+.card{
+  background:white;
+  padding:18px;
+  margin:12px 0;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 12px 0;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      transition: 0.2s;
-    }
+.card:hover{
+  transform:scale(1.02);
+}
 
-    .card:hover {
-      transform: translateY(-2px);
-    }
+a{
+  text-decoration:none;
+  color:#111;
+}
 
-    .title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-    }
+.tag{
+  font-size:12px;
+  padding:4px 10px;
+  border-radius:6px;
+  color:white;
+  background:#22c55e;
+}
 
-    .tag {
-      font-size: 12px;
-      padding: 5px 10px;
-      border-radius: 6px;
-      color: white;
-      background: #22c55e;
-      white-space: nowrap;
-    }
+.orange{ background:#f59e0b; }
+.red{ background:#ef4444; }
 
-    .orange {
-      background: #f59e0b;
-    }
-
-    .red {
-      background: #ef4444;
-    }
-
-    .desc {
-      margin-top: 8px;
-      color: #444;
-      font-size: 14px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0f172a;
-    }
-
-    a:hover {
-      color: #2563eb;
-    }
-
-    .intro {
-      line-height: 1.7;
-    }
-  </style>
+.intro{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  margin-top:20px;
+}
+</style>
 </head>
 
 <body>
@@ -104,93 +77,75 @@
 
 <div class="container">
 
-  <div class="card intro">
-    <h2>Bienvenido a Glutenor</h2>
+<div class="intro">
+  <h2>🍽️ Encuentra dónde comer sin gluten en Tarragona</h2>
+  <p>Descubre restaurantes, cafeterías y locales adaptados para celíacos o personas con sensibilidad al gluten.</p>
+</div>
 
-    <p>
-      Glutenor es una guía dedicada a encontrar restaurantes, cafeterías
-      y establecimientos con opciones sin gluten en Tarragona.
-    </p>
+<h2>🔥 Restaurantes destacados</h2>
 
-    <p>
-      Nuestro objetivo es ayudar a personas celíacas o con sensibilidad al gluten
-      a descubrir lugares donde comer con mayor tranquilidad.
-    </p>
-  </div>
+<div class="card">
+  <a href="restaurantes/el-terrat.html">
+    <h3>El Terrat</h3>
+    <span class="tag orange">Opciones sin gluten</span>
+  </a>
+</div>
 
-  <h2>🍽️ Restaurantes en Tarragona</h2>
+<div class="card">
+  <a href="restaurantes/frida.html">
+    <h3>Frida Restaurant</h3>
+    <span class="tag orange">Opciones sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/el-terrat.html">El Terrat</a></h3>
-      <span class="tag orange">Opciones sin gluten</span>
-    </div>
-    <p class="desc">Cocina mediterránea de autor en el centro de Tarragona.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/el-llagut.html">
+    <h3>El Llagut</h3>
+    <span class="tag orange">Opciones sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/frida.html">Frida Restaurant</a></h3>
-      <span class="tag orange">Opciones sin gluten</span>
-    </div>
-    <p class="desc">Restaurante mexicano con platos adaptables sin gluten.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/el-posit-serrallo.html">
+    <h3>El Pòsit del Serrallo</h3>
+    <span class="tag orange">Opciones sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/el-llagut.html">El Llagut</a></h3>
-      <span class="tag orange">Opciones sin gluten</span>
-    </div>
-    <p class="desc">Arroces y pescado en el puerto de Tarragona.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/espai-la-vall.html">
+    <h3>Espai La Vall</h3>
+    <span class="tag">100% sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/el-posit-del-serrallo.html">El Pòsit del Serrallo</a></h3>
-      <span class="tag orange">Opciones sin gluten</span>
-    </div>
-    <p class="desc">Restaurante marinero situado en el Serrallo.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/sense-gluten-free.html">
+    <h3>SENSE Gluten Free</h3>
+    <span class="tag">100% sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/espai-la-vall.html">Espai La Vall</a></h3>
-      <span class="tag">100% sin gluten</span>
-    </div>
-    <p class="desc">Cafetería especializada sin gluten en Tarragona.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/ran-de-mar.html">
+    <h3>Ran de Mar</h3>
+    <span class="tag">100% sin gluten</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/sense-gluten-free.html">Sense Gluten Free</a></h3>
-      <span class="tag">100% sin gluten</span>
-    </div>
-    <p class="desc">Panadería y cafetería especializada.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/aq-restaurant.html">
+    <h3>AQ Restaurant</h3>
+    <span class="tag red">Alta gastronomía</span>
+  </a>
+</div>
 
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/ran-de-mar.html">Ran de Mar</a></h3>
-      <span class="tag">100% sin gluten</span>
-    </div>
-    <p class="desc">Restaurante marinero con opciones para celíacos.</p>
-  </div>
-
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/aq-restaurant.html">AQ Restaurant</a></h3>
-      <span class="tag red">Alta gastronomía</span>
-    </div>
-    <p class="desc">Restaurante gastronómico con menús adaptables.</p>
-  </div>
-
-  <div class="card">
-    <div class="title">
-      <h3><a href="restaurantes/el-alquimista.html">El Alquimista</a></h3>
-      <span class="tag">100% sin gluten</span>
-    </div>
-    <p class="desc">Cafetería y repostería especializada sin gluten.</p>
-  </div>
+<div class="card">
+  <a href="restaurantes/el-alquimista.html">
+    <h3>El Alquimista</h3>
+    <span class="tag">100% sin gluten</span>
+  </a>
+</div>
 
 </div>
 

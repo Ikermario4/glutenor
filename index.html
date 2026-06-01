@@ -40,12 +40,23 @@ header h1{
 }
 
 .card:hover{
-  transform:scale(1.02);
+  transform:translateY(-3px);
 }
 
-a{
+.card a{
   text-decoration:none;
   color:#111;
+  display:block;
+}
+
+.card h3{
+  margin:0;
+}
+
+.desc{
+  margin-top:6px;
+  color:#555;
+  font-size:14px;
 }
 
 .tag{
@@ -54,16 +65,20 @@ a{
   border-radius:6px;
   color:white;
   background:#22c55e;
+  display:inline-block;
+  margin-top:8px;
 }
 
 .orange{ background:#f59e0b; }
 .red{ background:#ef4444; }
 
-.intro{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  margin-top:20px;
+input{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  margin-top:10px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -77,17 +92,27 @@ a{
 
 <div class="container">
 
-<div class="intro">
-  <h2>🍽️ Encuentra dónde comer sin gluten en Tarragona</h2>
-  <p>Descubre restaurantes, cafeterías y locales adaptados para celíacos o personas con sensibilidad al gluten.</p>
+<!-- INTRO -->
+<div class="card">
+  <h2>🔍 Buscar restaurante</h2>
+  <input id="search" type="text" placeholder="Escribe el nombre del restaurante...">
 </div>
 
-<h2>🔥 Restaurantes destacados</h2>
+<div class="card">
+  <h2>🍽️ Guía sin gluten en Tarragona</h2>
+  <p>
+    Descubre restaurantes, cafeterías y locales con opciones sin gluten en Tarragona.
+    Información clara, rápida y pensada para personas celíacas.
+  </p>
+</div>
+
+<h2>🔥 Restaurantes</h2>
 
 <div class="card">
   <a href="restaurantes/el-terrat.html">
     <h3>El Terrat</h3>
     <span class="tag orange">Opciones sin gluten</span>
+    <p class="desc">Cocina mediterránea de autor</p>
   </a>
 </div>
 
@@ -95,6 +120,7 @@ a{
   <a href="restaurantes/frida.html">
     <h3>Frida Restaurant</h3>
     <span class="tag orange">Opciones sin gluten</span>
+    <p class="desc">Cocina mexicana</p>
   </a>
 </div>
 
@@ -102,6 +128,7 @@ a{
   <a href="restaurantes/el-llagut.html">
     <h3>El Llagut</h3>
     <span class="tag orange">Opciones sin gluten</span>
+    <p class="desc">Arroces y pescado</p>
   </a>
 </div>
 
@@ -109,6 +136,7 @@ a{
   <a href="restaurantes/el-posit-serrallo.html">
     <h3>El Pòsit del Serrallo</h3>
     <span class="tag orange">Opciones sin gluten</span>
+    <p class="desc">Cocina marinera</p>
   </a>
 </div>
 
@@ -116,6 +144,7 @@ a{
   <a href="restaurantes/espai-la-vall.html">
     <h3>Espai La Vall</h3>
     <span class="tag">100% sin gluten</span>
+    <p class="desc">Cafetería especializada</p>
   </a>
 </div>
 
@@ -123,6 +152,7 @@ a{
   <a href="restaurantes/sense-gluten-free.html">
     <h3>SENSE Gluten Free</h3>
     <span class="tag">100% sin gluten</span>
+    <p class="desc">Panadería sin gluten</p>
   </a>
 </div>
 
@@ -130,6 +160,7 @@ a{
   <a href="restaurantes/ran-de-mar.html">
     <h3>Ran de Mar</h3>
     <span class="tag">100% sin gluten</span>
+    <p class="desc">Cocina marinera</p>
   </a>
 </div>
 
@@ -137,6 +168,7 @@ a{
   <a href="restaurantes/aq-restaurant.html">
     <h3>AQ Restaurant</h3>
     <span class="tag red">Alta gastronomía</span>
+    <p class="desc">Restaurante gourmet</p>
   </a>
 </div>
 
@@ -144,10 +176,31 @@ a{
   <a href="restaurantes/el-alquimista.html">
     <h3>El Alquimista</h3>
     <span class="tag">100% sin gluten</span>
+    <p class="desc">Cafetería y repostería</p>
   </a>
 </div>
 
 </div>
+
+<!-- BUSCADOR SCRIPT -->
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+search.addEventListener("keyup", function() {
+  const value = this.value.toLowerCase();
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+
+    if(text.includes(value)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
 
 </body>
 </html>

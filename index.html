@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Glutenor | Guía sin gluten en Tarragona</title>
 
-<meta name="description" content="Glutenor es la guía de referencia de restaurantes sin gluten en Tarragona. Descubre locales seguros para celíacos con fotos, información y recomendaciones.">
+<meta name="description" content="Glutenor es la guía visual de restaurantes sin gluten en Tarragona. Descubre locales seguros para celíacos con fotos, información y recomendaciones.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,25 +19,44 @@ body{
   color:#111;
 }
 
-/* HERO */
+/* HERO NUEVO */
 .hero{
-  background: linear-gradient(135deg,#0f172a,#1e293b);
+  position:relative;
+  background:#0f172a;
   color:white;
-  padding:70px 20px;
+  padding:80px 20px;
   text-align:center;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
+  opacity:0.25;
+  z-index:0;
+}
+
+.hero h1,
+.hero p{
+  position:relative;
+  z-index:1;
 }
 
 .hero h1{
   margin:0;
-  font-size:54px;
+  font-size:58px;
 }
 
 .hero p{
   font-size:18px;
-  opacity:0.85;
-  max-width:700px;
-  margin:auto;
-  margin-top:10px;
+  max-width:800px;
+  margin:10px auto 0;
+  opacity:0.9;
 }
 
 /* CONTAINER */
@@ -70,20 +89,22 @@ input{
   padding:14px;
   border-radius:10px;
   border:1px solid #ddd;
+  font-size:15px;
 }
 
 /* RESTAURANTES */
 .restaurant{
   background:white;
-  margin:12px 0;
+  margin:14px 0;
   border-radius:16px;
   overflow:hidden;
   box-shadow:0 6px 18px rgba(0,0,0,0.06);
-  transition:0.2s;
+  transition:0.25s;
 }
 
 .restaurant:hover{
-  transform:translateY(-4px);
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
 }
 
 .restaurant a{
@@ -92,12 +113,14 @@ input{
   display:block;
 }
 
+/* IMAGENES */
 .restaurant img{
   width:100%;
-  height:180px;
+  height:190px;
   object-fit:cover;
 }
 
+/* TEXTO */
 .content{
   padding:14px;
 }
@@ -135,15 +158,21 @@ h3{
 <!-- HERO -->
 <div class="hero">
   <h1>Glutenor</h1>
-  <p>Guía de restaurantes sin gluten en Tarragona</p>
+  <p>
+    La guía visual de restaurantes sin gluten en Tarragona.<br>
+    Descubre dónde comer seguro, con fotos reales, información clara y recomendaciones verificadas.
+  </p>
 </div>
 
 <div class="container">
 
-<!-- INFO -->
+<!-- INFO PORTADA -->
 <div class="info">
   <h2>🍽️ Qué es Glutenor</h2>
-  <p>Guía independiente de restaurantes sin gluten en Tarragona para personas celíacas.</p>
+  <p>
+    Glutenor nace para ayudar a personas celíacas a encontrar restaurantes seguros en Tarragona y provincia.
+    Mostramos locales con opciones sin gluten reales, fotos, y una experiencia visual tipo guía moderna.
+  </p>
 </div>
 
 <!-- BUSCADOR -->
@@ -153,9 +182,8 @@ h3{
 </div>
 
 <!-- RESTAURANTES -->
-<h2>⭐ Restaurantes</h2>
+<h2 style="margin-top:25px;">⭐ Restaurantes</h2>
 
-<!-- 1 -->
 <div class="restaurant">
 <a href="restaurantes/el-terrat.html">
 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
@@ -167,7 +195,6 @@ h3{
 </a>
 </div>
 
-<!-- 2 -->
 <div class="restaurant">
 <a href="restaurantes/frida.html">
 <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b">
@@ -179,7 +206,6 @@ h3{
 </a>
 </div>
 
-<!-- 3 -->
 <div class="restaurant">
 <a href="restaurantes/el-llagut.html">
 <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
@@ -191,7 +217,6 @@ h3{
 </a>
 </div>
 
-<!-- 4 -->
 <div class="restaurant">
 <a href="restaurantes/el-posit.html">
 <img src="https://images.unsplash.com/photo-1555992336-03a23c3a1c4d">
@@ -203,7 +228,6 @@ h3{
 </a>
 </div>
 
-<!-- 5 -->
 <div class="restaurant">
 <a href="restaurantes/espai-la-vall.html">
 <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
@@ -215,7 +239,6 @@ h3{
 </a>
 </div>
 
-<!-- 6 -->
 <div class="restaurant">
 <a href="restaurantes/sense-gluten.html">
 <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
@@ -227,7 +250,6 @@ h3{
 </a>
 </div>
 
-<!-- 7 -->
 <div class="restaurant">
 <a href="restaurantes/ran-de-mar.html">
 <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
@@ -239,7 +261,6 @@ h3{
 </a>
 </div>
 
-<!-- 8 -->
 <div class="restaurant">
 <a href="restaurantes/el-alquimista.html">
 <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
@@ -261,8 +282,8 @@ search.addEventListener("input",function(){
   const val=this.value.toLowerCase();
 
   restaurants.forEach(r=>{
-    r.style.display=r.innerText.toLowerCase().includes(val)
-    ?"block":"none";
+    const text=r.innerText.toLowerCase();
+    r.style.display=text.includes(val)?"block":"none";
   });
 });
 </script>

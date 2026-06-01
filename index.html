@@ -25,7 +25,6 @@ body{
   color:white;
   padding:70px 20px;
   text-align:center;
-  position:relative;
 }
 
 .hero h1{
@@ -41,15 +40,6 @@ body{
   margin-top:10px;
 }
 
-/* IMAGEN DECORATIVA */
-.hero-img{
-  margin-top:25px;
-  width:100%;
-  max-width:900px;
-  border-radius:18px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.25);
-}
-
 /* CONTAINER */
 .container{
   max-width:1000px;
@@ -57,13 +47,13 @@ body{
   padding:20px;
 }
 
-/* SECCIÓN */
-.section{
-  margin-top:30px;
-}
-
-.section h2{
-  font-size:22px;
+/* INFO */
+.info{
+  background:white;
+  padding:18px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  margin-top:20px;
 }
 
 /* BUSCADOR */
@@ -72,6 +62,7 @@ body{
   padding:18px;
   border-radius:14px;
   box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  margin-top:20px;
 }
 
 input{
@@ -79,7 +70,6 @@ input{
   padding:14px;
   border-radius:10px;
   border:1px solid #ddd;
-  font-size:15px;
 }
 
 /* RESTAURANTES */
@@ -102,14 +92,12 @@ input{
   display:block;
 }
 
-/* IMAGEN RESTAURANTE */
 .restaurant img{
   width:100%;
   height:180px;
   object-fit:cover;
 }
 
-/* TEXTO */
 .content{
   padding:14px;
 }
@@ -139,14 +127,6 @@ h3{
 .orange{background:#f59e0b;}
 .blue{background:#2563eb;}
 
-/* INFO BLOQUE */
-.info{
-  background:white;
-  padding:18px;
-  border-radius:14px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.06);
-}
-
 </style>
 </head>
 
@@ -155,47 +135,39 @@ h3{
 <!-- HERO -->
 <div class="hero">
   <h1>Glutenor</h1>
-  <p>La guía visual de restaurantes sin gluten en Tarragona. Descubre dónde comer seguro, con fotos, opiniones y recomendaciones reales.</p>
-
-  <!-- imagen decorativa (puedes cambiarla luego) -->
-  <img class="hero-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="restaurantes">
+  <p>Guía de restaurantes sin gluten en Tarragona</p>
 </div>
 
 <div class="container">
 
-<!-- INFO SOLO MARCA -->
-<div class="info section">
+<!-- INFO -->
+<div class="info">
   <h2>🍽️ Qué es Glutenor</h2>
-  <p>
-    Glutenor es una guía independiente creada para ayudar a personas celíacas a encontrar restaurantes seguros en Tarragona.
-    Mostramos locales verificados, opciones sin gluten y recomendaciones reales con fotos e información clara.
-  </p>
+  <p>Guía independiente de restaurantes sin gluten en Tarragona para personas celíacas.</p>
 </div>
 
 <!-- BUSCADOR -->
-<div class="section search-box">
+<div class="search-box">
   <h2>🔍 Buscar restaurante</h2>
-  <input id="search" type="text" placeholder="Buscar restaurante o tipo de cocina...">
+  <input id="search" type="text" placeholder="Buscar restaurante...">
 </div>
 
 <!-- RESTAURANTES -->
-<div class="section">
-
 <h2>⭐ Restaurantes</h2>
 
-<!-- EJEMPLO 1 -->
+<!-- 1 -->
 <div class="restaurant">
 <a href="restaurantes/el-terrat.html">
 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
 <div class="content">
 <h3>El Terrat</h3>
 <span class="tag blue">Destacado</span>
-<p class="desc">Cocina mediterránea de autor en Tarragona</p>
+<p class="desc">Cocina mediterránea de autor</p>
 </div>
 </a>
 </div>
 
-<!-- EJEMPLO 2 -->
+<!-- 2 -->
 <div class="restaurant">
 <a href="restaurantes/frida.html">
 <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b">
@@ -207,18 +179,76 @@ h3{
 </a>
 </div>
 
-<!-- EJEMPLO 3 -->
+<!-- 3 -->
 <div class="restaurant">
 <a href="restaurantes/el-llagut.html">
 <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
 <div class="content">
 <h3>El Llagut</h3>
 <span class="tag orange">Opciones sin gluten</span>
-<p class="desc">Arroces y pescado en Tarragona</p>
+<p class="desc">Arroces y pescado</p>
 </div>
 </a>
 </div>
 
+<!-- 4 -->
+<div class="restaurant">
+<a href="restaurantes/el-posit.html">
+<img src="https://images.unsplash.com/photo-1555992336-03a23c3a1c4d">
+<div class="content">
+<h3>El Pòsit del Serrallo</h3>
+<span class="tag orange">Opciones sin gluten</span>
+<p class="desc">Restaurante marinero</p>
+</div>
+</a>
+</div>
+
+<!-- 5 -->
+<div class="restaurant">
+<a href="restaurantes/espai-la-vall.html">
+<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+<div class="content">
+<h3>Espai La Vall</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cafetería sin gluten</p>
+</div>
+</a>
+</div>
+
+<!-- 6 -->
+<div class="restaurant">
+<a href="restaurantes/sense-gluten.html">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
+<div class="content">
+<h3>SENSE Gluten Free</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Panadería sin gluten</p>
+</div>
+</a>
+</div>
+
+<!-- 7 -->
+<div class="restaurant">
+<a href="restaurantes/ran-de-mar.html">
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
+<div class="content">
+<h3>Ran de Mar</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cocina marinera</p>
+</div>
+</a>
+</div>
+
+<!-- 8 -->
+<div class="restaurant">
+<a href="restaurantes/el-alquimista.html">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+<div class="content">
+<h3>El Alquimista</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cafetería y repostería</p>
+</div>
+</a>
 </div>
 
 </div>
@@ -231,8 +261,8 @@ search.addEventListener("input",function(){
   const val=this.value.toLowerCase();
 
   restaurants.forEach(r=>{
-    const text=r.innerText.toLowerCase();
-    r.style.display=text.includes(val)?"block":"none";
+    r.style.display=r.innerText.toLowerCase().includes(val)
+    ?"block":"none";
   });
 });
 </script>

@@ -3,54 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <title>Glutenor | Restaurantes sin gluten en Tarragona</title>
+
+<meta name="description" content="Glutenor es la guía de referencia de restaurantes sin gluten en Tarragona. Descubre locales seguros para celíacos, opciones verificadas y recomendaciones reales.">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- FUENTE MÁS MODERNA -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 body{
-  font-family: Arial;
   margin:0;
-  background:#f5f7fb;
+  font-family:'Inter', sans-serif;
+  background:#f6f7fb;
+  color:#111;
 }
 
+/* HEADER */
 header{
-  background:#0f172a;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color:white;
-  padding:50px 20px;
+  padding:70px 20px;
   text-align:center;
 }
 
 header h1{
   margin:0;
-  font-size:45px;
+  font-size:52px;
+  letter-spacing:-1px;
 }
 
+header p{
+  margin-top:10px;
+  font-size:18px;
+  opacity:0.85;
+}
+
+/* CONTAINER */
 .container{
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
   padding:20px;
 }
 
-.card{
+/* INTRO */
+.hero{
+  background:white;
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+  margin-top:-30px;
+}
+
+/* BUSCADOR */
+input{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 3px rgba(37,99,235,0.1);
+}
+
+/* RESTAURANTES */
+.restaurant{
   background:white;
   padding:18px;
   margin:12px 0;
-  border-radius:12px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  border-radius:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
   transition:0.2s;
 }
 
-.card:hover{
-  transform:translateY(-3px);
+.restaurant:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.10);
 }
 
-.card a{
+.restaurant a{
   text-decoration:none;
   color:#111;
   display:block;
 }
 
-.card h3{
+h2{
+  margin-top:25px;
+  font-size:22px;
+}
+
+h3{
   margin:0;
+  font-size:18px;
 }
 
 .desc{
@@ -59,27 +108,38 @@ header h1{
   font-size:14px;
 }
 
+/* TAGS */
 .tag{
   font-size:12px;
-  padding:4px 10px;
-  border-radius:6px;
+  padding:5px 10px;
+  border-radius:999px;
   color:white;
-  background:#22c55e;
   display:inline-block;
   margin-top:8px;
+  font-weight:600;
 }
 
-.orange{ background:#f59e0b; }
-.red{ background:#ef4444; }
+.green{background:#16a34a;}
+.orange{background:#f59e0b;}
+.red{background:#ef4444;}
+.blue{background:#2563eb;}
 
-input{
-  width:100%;
-  padding:12px;
-  border-radius:10px;
-  border:1px solid #ccc;
-  margin-top:10px;
-  font-size:14px;
+/* SECCIONES */
+.section-title{
+  margin-top:30px;
+  font-size:20px;
+  font-weight:700;
 }
+
+/* CONTACTO */
+.contact{
+  background:#0f172a;
+  color:white;
+  padding:18px;
+  border-radius:16px;
+  margin-top:30px;
+}
+
 </style>
 </head>
 
@@ -87,117 +147,118 @@ input{
 
 <header>
   <h1>Glutenor</h1>
-  <p>Guía de restaurantes sin gluten en Tarragona</p>
+  <p>La guía de referencia de restaurantes sin gluten en Tarragona</p>
 </header>
 
 <div class="container">
 
-<!-- INTRO -->
-<div class="card">
-  <h2>🔍 Buscar restaurante</h2>
-  <input id="search" type="text" placeholder="Escribe el nombre del restaurante...">
-</div>
-
-<div class="card">
-  <h2>🍽️ Guía sin gluten en Tarragona</h2>
+<!-- HERO -->
+<div class="hero">
+  <h2>🍽️ Comer sin gluten en Tarragona, fácil y seguro</h2>
   <p>
-    Descubre restaurantes, cafeterías y locales con opciones sin gluten en Tarragona.
-    Información clara, rápida y pensada para personas celíacas.
+    Glutenor es una guía independiente creada para ayudarte a encontrar restaurantes seguros para celíacos en Tarragona y provincia.
+    Aquí solo aparecen locales con opciones reales sin gluten o totalmente adaptados.
   </p>
 </div>
 
-<h2>🔥 Restaurantes</h2>
-
-<div class="card">
-  <a href="restaurantes/el-terrat.html">
-    <h3>El Terrat</h3>
-    <span class="tag orange">Opciones sin gluten</span>
-    <p class="desc">Cocina mediterránea de autor</p>
-  </a>
+<!-- BUSCADOR -->
+<div class="restaurant">
+  <h3>🔍 Buscar restaurante</h3>
+  <input id="search" type="text" placeholder="Escribe el nombre...">
 </div>
 
-<div class="card">
-  <a href="restaurantes/frida.html">
-    <h3>Frida Restaurant</h3>
-    <span class="tag orange">Opciones sin gluten</span>
-    <p class="desc">Cocina mexicana</p>
-  </a>
+<!-- DESTACADOS -->
+<div class="section-title">⭐ Destacados</div>
+
+<div class="restaurant">
+<a href="restaurantes/el-terrat.html">
+<h3>El Terrat</h3>
+<span class="tag blue">Destacado</span>
+<p class="desc">Cocina mediterránea de autor en Tarragona</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/el-llagut.html">
-    <h3>El Llagut</h3>
-    <span class="tag orange">Opciones sin gluten</span>
-    <p class="desc">Arroces y pescado</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/aq-restaurant.html">
+<h3>AQ Restaurant</h3>
+<span class="tag blue">Destacado</span>
+<p class="desc">Alta gastronomía con opciones sin gluten</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/el-posit-serrallo.html">
-    <h3>El Pòsit del Serrallo</h3>
-    <span class="tag orange">Opciones sin gluten</span>
-    <p class="desc">Cocina marinera</p>
-  </a>
+<!-- LISTA -->
+<div class="section-title">🍽️ Todos los restaurantes</div>
+
+<div class="restaurant">
+<a href="restaurantes/frida.html">
+<h3>Frida Restaurant</h3>
+<span class="tag orange">Opciones sin gluten</span>
+<p class="desc">Cocina mexicana adaptada</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/espai-la-vall.html">
-    <h3>Espai La Vall</h3>
-    <span class="tag">100% sin gluten</span>
-    <p class="desc">Cafetería especializada</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/el-llagut.html">
+<h3>El Llagut</h3>
+<span class="tag orange">Opciones sin gluten</span>
+<p class="desc">Arroces y pescado en Tarragona</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/sense-gluten-free.html">
-    <h3>SENSE Gluten Free</h3>
-    <span class="tag">100% sin gluten</span>
-    <p class="desc">Panadería sin gluten</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/espai-la-vall.html">
+<h3>Espai La Vall</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cafetería especializada sin gluten</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/ran-de-mar.html">
-    <h3>Ran de Mar</h3>
-    <span class="tag">100% sin gluten</span>
-    <p class="desc">Cocina marinera</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/sense-gluten-free.html">
+<h3>SENSE Gluten Free</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Panadería sin gluten</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/aq-restaurant.html">
-    <h3>AQ Restaurant</h3>
-    <span class="tag red">Alta gastronomía</span>
-    <p class="desc">Restaurante gourmet</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/ran-de-mar.html">
+<h3>Ran de Mar</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cocina marinera</p>
+</a>
 </div>
 
-<div class="card">
-  <a href="restaurantes/el-alquimista.html">
-    <h3>El Alquimista</h3>
-    <span class="tag">100% sin gluten</span>
-    <p class="desc">Cafetería y repostería</p>
-  </a>
+<div class="restaurant">
+<a href="restaurantes/el-alquimista.html">
+<h3>El Alquimista</h3>
+<span class="tag green">100% sin gluten</span>
+<p class="desc">Cafetería y repostería</p>
+</a>
+</div>
+
+<!-- CONTACTO -->
+<div class="contact">
+  <h3>⭐ ¿Quieres aparecer aquí?</h3>
+  <p>
+    Si tienes un restaurante y quieres aparecer en Glutenor como destacado o recomendado,
+    contacta con nosotros.
+  </p>
+  <p><strong>glutenor.contacto@gmail.com</strong></p>
 </div>
 
 </div>
 
-<!-- BUSCADOR SCRIPT -->
 <script>
-const search = document.getElementById("search");
-const cards = document.querySelectorAll(".card");
+const search=document.getElementById("search");
+const restaurants=document.querySelectorAll(".restaurant");
 
-search.addEventListener("keyup", function() {
-  const value = this.value.toLowerCase();
+search.addEventListener("input",function(){
+  const val=this.value.toLowerCase();
 
-  cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
-
-    if(text.includes(value)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+  restaurants.forEach(r=>{
+    r.style.display=r.innerText.toLowerCase().includes(val)
+    ?"block":"none";
   });
 });
 </script>
